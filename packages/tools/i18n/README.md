@@ -1,4 +1,4 @@
-# Svaio
+# Svaio I18n Package
 
 [![Web](https://img.shields.io/badge/Web-grey?style=for-the-badge&logoColor=white)](https://pigeonposse.com)
 [![About Us](https://img.shields.io/badge/About%20Us-grey?style=for-the-badge&logoColor=white)](https://pigeonposse.com/about)
@@ -11,14 +11,13 @@
 
 [![License](https://img.shields.io/github/license/pigeonposse/svaio?style=for-the-badge&color=green&logoColor=white)](/LICENSE)
 [![Version](https://img.shields.io/npm/v/svaio?style=for-the-badge&color=blue&label=Version)](https://www.npmjs.com/package/svaio)
-[![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/svaio?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/svaio)
-[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/svaio/1.0.0?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/svaio)
+[![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/@svaio/i18n?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/@svaio/i18n)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@svaio/i18n/1.0.0?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@svaio/i18n)
 
-SvelteKit All in One Utilities, for complete, no-configuration development
+Zero-config i18n plugin for Vite and Sveltekit
 
 ## Table of contents
 
-- [What is `svaio`?](#what-is-svaio)
 - [🔑 Installation](#-installation)
 - [➕ More](#-more)
 - [👨‍💻 Development](#-development)
@@ -27,26 +26,20 @@ SvelteKit All in One Utilities, for complete, no-configuration development
 - [✨ About us](#-about-us)
 
 
-## What is `svaio`?
-
-`svaio` is an all-in-one utility from SvelteKit, for complete, zero-configuration development.
-
-> ⚠ ALPHA VERSION
-
 
 
 ## 🔑 Installation
 
 ```bash 
-npm install svaio
+npm install @svaio/i18n
 # or
-pnpm install svaio
+pnpm install @svaio/i18n
 # or
-yarn add svaio
+yarn add @svaio/i18n
 # or
-bun add svaio
+bun add @svaio/i18n
 # or
-deno add svaio
+deno add @svaio/i18n
 ```
 
 ## ➕ More

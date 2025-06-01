@@ -1,14 +1,15 @@
 import { SvelteKitPWA } from '@vite-pwa/sveltekit'
 
-import type { Options } from './types'
+import type { Options }      from './types'
+import type { PluginOption } from 'vite'
 
 export type { Options }
 
 /**
  * SvelteKit PWA Plugin
  *
- * @param   {Options} opts - An object containing configuration options for the PWA.
- * @returns                The configured SvelteKit PWA plugin instance.
+ * @param   {Options}      opts - An object containing configuration options for the PWA.
+ * @returns {PluginOption}      The configured SvelteKit PWA plugin instance.
  * @example
  * import pwaPlugin            from '@svaio/pwa'
  * import { setDefaultConfig } from '@svaio/pwa/config'
@@ -23,7 +24,7 @@ export type { Options }
  * } )
  */
 
-const vitePlugin = ( opts: Options ) =>
+const vitePlugin = ( opts: Options ): PluginOption =>
 	SvelteKitPWA( opts )
 
 export default vitePlugin

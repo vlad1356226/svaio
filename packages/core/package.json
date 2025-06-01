@@ -1,7 +1,7 @@
 {
 	"name": "svaio",
-	"version": "1.0.0",
-	"description": "svaio",
+	"version": "0.0.1",
+	"description": "SvelteKit All in One Utilities, for complete, no-configuration development",
 	"keywords": [
 		"i18n",
 		"manifest",
@@ -18,14 +18,34 @@
 		"vite",
 		"vite-plugin"
 	],
+	"homepage": "https://svaio.pigeonposse.com/guide/core",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/svaio/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/svaio/",
+		"directory": "packages/core"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/contribute"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.mjs"
 		},
-		"./config": {
-			"types": "./dist/config.d.ts",
-			"import": "./dist/config.mjs"
+		"./utils": {
+			"types": "./dist/utils.d.ts",
+			"import": "./dist/utils.mjs"
 		}
 	},
 	"files": [
@@ -35,12 +55,16 @@
 		"build": "unbuild"
 	},
 	"dependencies": {
+		"@svaio/i18n": "workspace:*",
 		"@svaio/pwa": "workspace:*",
 		"@svaio/sitemap": "workspace:*",
 		"@svaio/unocss": "workspace:*"
 	},
 	"devDependencies": {
 		"@svaio/repo-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"vite": ">=2.0.0"
 	},
 	"publishConfig": {
 		"access": "public",

@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/pwa",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Zero-config Progressive Web App plugin for Vite and Sveltekit",
 	"keywords": [
 		"browser-manifest",
@@ -16,6 +16,26 @@
 		"vite",
 		"vite-plugin"
 	],
+	"homepage": "https://svaio.pigeonposse.com/guide/pwa",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/svaio/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/svaio/",
+		"directory": "packages/pwa"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/contribute"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -38,6 +58,9 @@
 	},
 	"devDependencies": {
 		"@svaio/repo-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"vite": ">=2.0.0"
 	},
 	"publishConfig": {
 		"access": "public",

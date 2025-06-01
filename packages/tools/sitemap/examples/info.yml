@@ -1,0 +1,7 @@
+Vite:
+  title: "Simple Usage"
+  data:
+    CLI:
+      input: "./vite/index.js"
+      title: "./vite.config.js"
+

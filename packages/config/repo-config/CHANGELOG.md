@@ -1,5 +1,11 @@
 # @dovenv/repo-config
 
+## 0.0.1
+
+### Patch Changes
+
+- Up alpha version
+
 ## 1.5.1
 
 ### Patch Changes

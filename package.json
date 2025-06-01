@@ -3,19 +3,41 @@
 	"private": true,
 	"description": "SvelteKit All in One Utilities, for complete, no-configuration development",
 	"keywords": [
+		"i18n",
+		"manifest",
 		"pigeonposse",
 		"pp",
+		"pwa",
+		"robots",
+		"sitemap",
+		"sv",
 		"sv",
 		"svelte",
 		"sveltekit",
-		"toolkit"
+		"toolkit",
+		"unocss",
+		"vite",
+		"vite-plugin"
 	],
+	"homepage": "https://svaio.pigeonposse.com",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/svaio/issues",
+		"email": "dev@pigeonposse.com"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/pigeonposse/svaio.git"
 	},
-	"license": "GPL-3.0-only",
-	"author": "",
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/contribute"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
 	"type": "module",
 	"workspaces": [
 		"packages/*",
@@ -58,16 +80,11 @@
 		"node": ">=20.0.0",
 		"pnpm": ">=8.10.0"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild"
-		]
-	},
 	"extra": {
 		"id": "svaio",
 		"productName": "svaio",
-		"shortDesc": "Toolkit for make your code workspace easier",
-		"action": "Complex projects should be easier",
+		"shortDesc": "SvelteKit All in One Utilities",
+		"action": "Zero-config i18n, PWA, robots.txt, sitemap, and more",
 		"libraryURL": "https://www.npmjs.com/package/svaio",
 		"licenseURL": "https://github.com/pigeonposse/dovenv/blob/main/LICENSE",
 		"changelogURL": "https://github.com/pigeonposse/svaio/blob/main/packages/core/CHANGELOG.md",

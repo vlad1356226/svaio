@@ -1,4 +1,5 @@
-import sitemap from 'vite-plugin-sitemap'
+import { PluginOption } from 'vite'
+import sitemap          from 'vite-plugin-sitemap'
 
 import type { Options } from './types'
 
@@ -7,9 +8,9 @@ export type { Options }
 /**
  * Sitemap plugin for Vite and SvelteKit.
  *
- * @param   {Options}               opts - An object containing configuration options for the
- *                                       sitemap plugin.
- * @returns {import('vite').Plugin}      The configured sitemap plugin instance.
+ * @param   {Options}                     opts - An object containing configuration options for the
+ *                                             sitemap plugin.
+ * @returns {import('vite').PluginOption}      The configured sitemap plugin instance.
  * @example
  * import { sitemapPlugin } from '@svaio/sitemap'
  * import { defineConfig }  from 'vite'
@@ -23,7 +24,7 @@ export type { Options }
  *   ],
  * } )
  */
-const vitePlugin = ( opts: Options ) =>
+const vitePlugin = ( opts: Options ): PluginOption =>
 	sitemap( opts )
 
 export default vitePlugin

@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/sitemap",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Zero-config Sitemap plugin for Vite and Sveltekit",
 	"keywords": [
 		"pigeonposse",
@@ -14,6 +14,26 @@
 		"toolkit",
 		"vite"
 	],
+	"homepage": "https://svaio.pigeonposse.com/guide/sitemap",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/svaio/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/svaio/",
+		"directory": "packages/sitemap"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/contribute"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -35,6 +55,9 @@
 	},
 	"devDependencies": {
 		"@svaio/repo-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"vite": ">=2.0.0"
 	},
 	"publishConfig": {
 		"access": "public",

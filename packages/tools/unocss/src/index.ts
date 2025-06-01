@@ -1,11 +1,10 @@
 
-import unoCSS from 'unocss/vite'
+import unoCSS           from 'unocss/vite'
+import { PluginOption } from 'vite'
 
 import { Options } from './types'
 
 export type { Options }
-
-type Plugin = ReturnType<typeof unoCSS>
 
 /**
  * Vite plugin for UnoCSS & SvelteKit.
@@ -25,7 +24,7 @@ type Plugin = ReturnType<typeof unoCSS>
  *   ],
  * } )
  */
-const vitePlugin = <Theme extends object>( opts: Options<Theme> ): Plugin =>
+const vitePlugin = <Theme extends object>( opts: Options<Theme> ): PluginOption =>
 	unoCSS<Theme>( opts )
 
 export default vitePlugin

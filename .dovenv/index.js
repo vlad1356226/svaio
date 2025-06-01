@@ -5,9 +5,19 @@ import {
 } from '@dovenv/theme-pigeonposse'
 
 export default defineConfig(
-	pigeonposseMonorepoTheme( { core : await getWorkspaceConfig( {
-		metaURL  : import.meta.url,
-		path     : '../',
-		corePath : './packages/core',
-	} ) } ),
+	pigeonposseMonorepoTheme( {
+		core : await getWorkspaceConfig( {
+			metaURL  : import.meta.url,
+			path     : '../',
+			corePath : './packages/core',
+		} ),
+		docs : {
+			vitepress : {
+				ignoreDeadLinks : true,
+				themeConfig     : { outline: { level: [ 2, 3 ] } },
+				metaChunk       : true,
+			},
+			twoslash : false,
+		},
+	} ),
 )
