@@ -1,7 +1,7 @@
 {
 	"name": "@svaio/unocss",
-	"version": "0.0.1",
-	"description": "",
+	"version": "0.0.2",
+	"description": "Unocss for Sveltekit with multiple Utilities",
 	"keywords": [
 		"css",
 		"pigeonposse",
