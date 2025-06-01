@@ -1,0 +1,108 @@
+{
+	"name": "svaio-monorepo",
+	"private": true,
+	"description": "SvelteKit All in One Utilities, for complete, no-configuration development",
+	"keywords": [
+		"pigeonposse",
+		"pp",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pigeonposse/svaio.git"
+	},
+	"license": "GPL-3.0-only",
+	"author": "",
+	"type": "module",
+	"workspaces": [
+		"packages/*",
+		"packages/config/*",
+		"packages/tools/*"
+	],
+	"scripts": {
+		"+": "run() { pnpm -F @*/\"${@:1}\"; }; run $@",
+		"++": "pnpm -F $@",
+		".": "dovenv",
+		"build": "pnpm build:tools && pnpm build:core",
+		"build:core": "pnpm -f 'svaio' build",
+		"build:tools": "pnpm --parallel --filter '!svaio' build",
+		"lint:eslint": "dovenv lint eslint",
+		"lint:pkg": "dovenv lint custom -k pkg",
+		"lint:staged": "dovenv lint staged --silent",
+		"test": "pnpm run --sequential \"/test:.*/\"",
+		"test:check": "pnpm -F '*svaio*' run check",
+		"test:check-ws": "dovenv check --silent",
+		"test:pkg": "pnpm --parallel test",
+		"test:transform-ws": "dovenv transform --silent"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "0.5.1",
+		"@dovenv/core": "1.5.31",
+		"@dovenv/theme-pigeonposse": "1.5.31",
+		"@sveltejs/adapter-cloudflare": "7.0.3",
+		"@sveltejs/adapter-static": "3.0.8",
+		"@sveltejs/kit": "2.21.1",
+		"@types/node": "22.15.29",
+		"eslint": "9.28.0",
+		"svelte": "5.33.11",
+		"svelte-check": "4.2.1",
+		"typescript": "5.8.3",
+		"unbuild": "3.5.0",
+		"vite": "6.3.5"
+	},
+	"packageManager": "pnpm@10.11.0",
+	"engines": {
+		"node": ">=20.0.0",
+		"pnpm": ">=8.10.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"extra": {
+		"id": "svaio",
+		"productName": "svaio",
+		"shortDesc": "Toolkit for make your code workspace easier",
+		"action": "Complex projects should be easier",
+		"libraryURL": "https://www.npmjs.com/package/svaio",
+		"licenseURL": "https://github.com/pigeonposse/dovenv/blob/main/LICENSE",
+		"changelogURL": "https://github.com/pigeonposse/svaio/blob/main/packages/core/CHANGELOG.md",
+		"contributingURL": "https://github.com/pigeonposse/.github/blob/main/CONTRIBUTING.md",
+		"libraryID": "svaio",
+		"repoID": "svaio",
+		"rawRepoURL": "https://raw.githubusercontent.com/pigeonposse/svaio",
+		"docsURL": "https://svaio.pigeonposse.com",
+		"type": [
+			"library",
+			"js-library",
+			"ts-library",
+			"toolkit",
+			"cli",
+			"bin"
+		],
+		"collective": {
+			"id": "pigeonposse",
+			"name": "PigeonPosse",
+			"funding": "https://pigeonposse.com/contribute",
+			"gh": "https://github.com/pigeonposse",
+			"about": "https://pigeonposse.com/about",
+			"url": "https://pigeonposse.com",
+			"web": "https://pigeonposse.com",
+			"email": "dev@pigeonposse.com",
+			"socialUser": {
+				"twitter": "pigeonposse_",
+				"instagram": "pigeon.posse",
+				"medium": "pigeonposse"
+			},
+			"social": {
+				"twitter": "https://twitter.com/pigeonposse_",
+				"instagram": "https://www.instagram.com/pigeon.posse/",
+				"medium": "https://medium.com/@pigeonposse"
+			}
+		}
+	}
+}

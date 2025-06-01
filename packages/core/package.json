@@ -1,0 +1,49 @@
+{
+	"name": "svaio",
+	"version": "1.0.0",
+	"description": "svaio",
+	"keywords": [
+		"i18n",
+		"manifest",
+		"pigeonposse",
+		"pp",
+		"pwa",
+		"robots",
+		"sitemap",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit",
+		"unocss",
+		"vite",
+		"vite-plugin"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./config": {
+			"types": "./dist/config.d.ts",
+			"import": "./dist/config.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild"
+	},
+	"dependencies": {
+		"@svaio/pwa": "workspace:*",
+		"@svaio/sitemap": "workspace:*",
+		"@svaio/unocss": "workspace:*"
+	},
+	"devDependencies": {
+		"@svaio/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

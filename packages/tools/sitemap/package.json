@@ -1,0 +1,43 @@
+{
+	"name": "@svaio/sitemap",
+	"version": "1.0.0",
+	"description": "Zero-config Sitemap plugin for Vite and Sveltekit",
+	"keywords": [
+		"pigeonposse",
+		"pp",
+		"pwa",
+		"robots",
+		"sitemap",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit",
+		"vite"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./config": {
+			"types": "./dist/config.d.ts",
+			"import": "./dist/config.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild"
+	},
+	"dependencies": {
+		"vite-plugin-sitemap": "0.8.2"
+	},
+	"devDependencies": {
+		"@svaio/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

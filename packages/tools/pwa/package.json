@@ -1,0 +1,46 @@
+{
+	"name": "@svaio/pwa",
+	"version": "1.0.0",
+	"description": "Zero-config Progressive Web App plugin for Vite and Sveltekit",
+	"keywords": [
+		"browser-manifest",
+		"manifest",
+		"pigeonposse",
+		"pp",
+		"progressive-web-app",
+		"pwa",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit",
+		"vite",
+		"vite-plugin"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./config": {
+			"types": "./dist/config.d.ts",
+			"import": "./dist/config.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild"
+	},
+	"dependencies": {
+		"@vite-pwa/assets-generator": "1.0.0",
+		"@vite-pwa/sveltekit": "1.0.0"
+	},
+	"devDependencies": {
+		"@svaio/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

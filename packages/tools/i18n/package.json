@@ -1,0 +1,43 @@
+{
+	"name": "@svaio/i18n",
+	"version": "1.0.0",
+	"description": "Zero-config i18n plugin for Vite and Sveltekit",
+	"keywords": [
+		"i18n",
+		"internationalization",
+		"pigeonposse",
+		"pp",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit",
+		"vite",
+		"vite-plugin"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./vite": {
+			"types": "./dist/vite.d.ts",
+			"import": "./dist/vite.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild"
+	},
+	"dependencies": {
+		"@inlang/paraglide-sveltekit": "0.16.1"
+	},
+	"devDependencies": {
+		"@svaio/repo-config": "workspace:*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}
