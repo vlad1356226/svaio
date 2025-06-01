@@ -36,6 +36,7 @@
 		"email": "angelo@pigeonposse.com",
 		"url": "https://github.com/angelespejo"
 	},
+	"type": "module",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",

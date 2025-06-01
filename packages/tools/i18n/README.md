@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/github/license/pigeonposse/svaio?style=for-the-badge&color=green&logoColor=white)](/LICENSE)
 [![Version](https://img.shields.io/npm/v/svaio?style=for-the-badge&color=blue&label=Version)](https://www.npmjs.com/package/svaio)
 [![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/@svaio/i18n?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/@svaio/i18n)
-[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@svaio/i18n/1.0.0?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@svaio/i18n)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@svaio/i18n/0.0.1?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@svaio/i18n)
 
 Zero-config i18n plugin for Vite and Sveltekit
 

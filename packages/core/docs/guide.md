@@ -11,23 +11,23 @@
 ::: code-group
 
 ```bash [npm]
-npm create svaio@latest
+npm install svaio@latest
 ```
 
 ```bash [pnpm]
-pnpm create svaio@latest
+pnpm install svaio@latest
 ```
 
 ```bash [yarn]
-yarn create svaio
+yarn add svaio
 ```
 
 ```bash [bun]
-bun create svaio@latest
+bun add svaio@latest
 ```
 
 ```bash [deno]
-deno init --npm svaio@latest
+deno add svaio@latest
 ```
 
 :::
